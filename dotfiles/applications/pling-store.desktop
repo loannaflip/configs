@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Pling Store
+GenericName=Productivity Store
+Comment=A Productivity Store
+Categories=Utility;
+Keywords=appimage;store;flatpak;snad;snapd;
+TryExec=pling-store
+Exec=pling-store

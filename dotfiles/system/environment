@@ -1,0 +1,7 @@
+LANG=en_US.utf8
+INFOPATH=/bedrock/cross/pin/info:/bedrock/share/info:/usr/local/share/info:/usr/share/info:/bedrock/cross/info
+MANPATH=/bedrock/cross/pin/man:/bedrock/share/man:/usr/local/share/man:/usr/share/man:/bedrock/cross/man:/bedrock/cross/man
+PATH=/bedrock/cross/pin/bin:/bedrock/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/usr/local/games:/usr/games:/bedrock/cross/bin
+TERMINFO_DIRS=/bedrock/cross/pin/terminfo:/usr/local/share/terminfo:/usr/share/terminfo:/bedrock/cross/terminfo
+XDG_DATA_DIRS=/bedrock/cross/pin:/usr/local/share:/usr/share:/bedrock/cross
+QT_QPA_PLATFORMTHEME=qt5ct

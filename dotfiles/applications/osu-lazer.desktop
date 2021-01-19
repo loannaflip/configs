@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=OSU!LAZER
+GenericName=Rhythm Game
+Comment=A Rhythm Game
+Categories=Game;
+Keywords=rhythm;game;osu;osu-lazer;music;
+TryExec=osu-lazer
+Exec=osu-lazer

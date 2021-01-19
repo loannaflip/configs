@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Spicy
+Type=Application
+Comment=Set of GObject and Gtk objects for connecting to Spice servers and a client GUI
+Exec=spicy
+TryExec=spicy
+Icon=utilities-terminal
+Categories=Network;RemoteAccess;

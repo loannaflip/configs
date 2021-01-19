@@ -1,0 +1,97 @@
+use_thin_strokes: true
+draw_bold_text_with_bright_colors: true
+
+env:
+  TERM: xterm-256color
+
+colors:
+  # Normal colors
+  normal:
+    black:   '#000000'
+    red:     '#ff5454'
+    green:   '#86f78e'
+    yellow:  '#f5df64'
+    blue:    '#b785ff'
+    magenta: '#ffabe9'
+    cyan:    '#86c8f7'
+    white:   '#ffffff'
+
+  # Bright colors
+  bright:
+    black:   '#ff78a5'
+    red:     '#ff5454'
+    green:   '#86f78e'
+    yellow:  '#f5df64'
+    blue:    '#8985ff'
+    magenta: '#6c04c7'
+    cyan:    '#86c8f7'
+    white:   '#ffc4f0'
+
+  # Dim colors (Optional)
+  dim:
+    black:   '#ff78a5'
+    red:     '#ff5454'
+    green:   '#86f78e'
+    yellow:  '#f5df64'
+    blue:    '#6f6bf2'
+    magenta: '#6c04c7'
+    cyan:    '#86c8f7'
+    white:   '#ffc4f0'
+
+background_opacity: 0.4
+
+window:
+  padding:
+    x: 5
+    y: 3
+  title: Alacritty
+  dynamic_padding: true
+  decorations: full
+
+glyph_offset:
+  x: 0
+  y: 0
+
+font:
+  regular:
+    family: MonoLisa
+    style: Book
+  size: 16.0
+
+schemes:
+  solarized_dark: &dark
+
+cursor:
+  style: Underline
+  cursor: '#ff0055'
+  unfocused_hollow: true
+  vi_mode_style: None
+
+mouse:
+  hide_when_typing: true
+  url:
+    launcher:
+      program: xdg-open
+      args: []
+    modifiers: None
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>"
+
+mouse_bindings:
+  - { mouse: Middle, action: PasteSelection }
+  - { mouse: Right, action: Copy }
+
+key_bindings:
+  - { key: V, mods: Control, action: Paste }
+  - { key: C, mods: Control|Shift, action: Copy }
+
+live_config_reload: true
+draw_bold_text_with_bright_colors: true
+
+debug:
+  render_timer: false
+  persistent_logging: false
+  log_level: None
+  print_events: false
+  ref_test: false

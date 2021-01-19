@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Motrix
+GenericName=Download Manager
+Comment=A Download Manager
+Categories=Utility;
+Keywords=download manager;
+TryExec=motrix
+Exec=motrix

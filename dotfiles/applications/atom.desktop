@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Atom
+GenericName=Text Editor
+Comment=An Hackable Text Editor
+Categories=Utility;
+Keywords=text-editor;code-editor;
+TryExec=atom
+Exec=atom

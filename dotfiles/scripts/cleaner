@@ -1,0 +1,21 @@
+#!/bin/sh
+
+sudo rm -rf /var/tmp/portage/*
+sudo rm -rf /var/cache/distfiles/*
+sudo rm -rf /var/cache/binpkgs/*
+sudo rm -rf ~/.cache/*
+sudo rm -rf ~/.thumbnails/*
+sudo rm -rf ~/.local/share/Trash/*
+sudo rm -rf ~/.cargo/git
+sudo rm -rf ~/.cargo/registry
+sudo ccache -c
+sudo emerge --ask --depclean
+sudo pacman -Scc
+sudo pacman -Rns $(pacman -Qtdq)
+sudo dnf autoremove
+sudo xbps-remove -yO
+sudo xbps-remove -yo
+sudo strat -r devuan apt clean
+sudo strat -r devuan apt autoremove
+sudo fstrim -v /boot
+sudo fstrim -v /
