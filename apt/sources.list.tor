@@ -1,0 +1,36 @@
+# Codename compatibility DEBIAN<=>DEVUAN
+# - jessie = jessie
+# - stratch = ascii
+# - buster = beowulf
+# - bullseye = chimaera
+# - sid = ceres (never changes)
+# - experimental = experimental
+
+# -Debian-
+### BUSTER
+#deb [arch=amd64,i386] tor+http://vwakviie2ienjx6t.onion/debian buster main contrib non-free
+#deb-src [arch=amd64,i386] tor+http://vwakviie2ienjx6t.onion/debian buster main contrib non-free
+### BULLSEYE
+deb [arch=amd64,i386] tor+http://vwakviie2ienjx6t.onion/debian bullseye main contrib non-free
+deb-src [arch=amd64,i386] tor+http://vwakviie2ienjx6t.onion/debian bullseye main contrib non-free
+### UNSTABLE
+#deb [arch=amd64,i386] tor+http://vwakviie2ienjx6t.onion/debian unstable main contrib non-free
+#deb-src [arch=amd64,i386] tor+http://vwakviie2ienjx6t.onion/debian unstable main contrib non-free
+### EXPERIMENTAL
+#deb [arch=amd64,i386] tor+http://vwakviie2ienjx6t.onion/debian experimental main contrib non-free
+#deb-src [arch=amd64,i386] tor+http://vwakviie2ienjx6t.onion/debian experimental main contrib non-free
+
+# -Devuan-
+## STABLE
+#deb [arch=amd64,i386] tor+http://devuanfwojg73k6r.onion/devuan beowulf main contrib non-free
+#deb-src [arch=amd64,i386] tor+http://devuanfwojg73k6r.onion/devuan beowulf main contrib non-free
+## TESTING
+deb [arch=amd64,i386] tor+http://devuanfwojg73k6r.onion/devuan chimaera main contrib non-free
+deb-src [arch=amd64,i386] tor+http://devuanfwojg73k6r.onion/devuan chimaera main contrib non-free
+### UNSTABLE
+deb [arch=amd64,i386] tor+http://devuanfwojg73k6r.onion/devuan unstable main contrib non-free
+deb-src [arch=amd64,i386] tor+http://devuanfwojg73k6r.onion/devuan unstable main contrib non-free
+
+# Liquorix
+#deb [arch=amd64,i386] tor+http://liquorix.net/debian stable main
+#deb-src [arch=amd64,i386] tor+http://liquorix.net/debian stable main

@@ -1,0 +1,27 @@
+# Debian
+### STABLE
+deb [arch=amd64,i386] https://deb.debian.org/debian stable main contrib non-free
+deb-src [arch=amd64,i386] https://deb.debian.org/debian stable main contrib non-free
+### TESTING
+deb [arch=amd64,i386] https://deb.debian.org/debian testing main contrib non-free
+deb-src [arch=amd64,i386] https://deb.debian.org/debian testing main contrib non-free
+### UNSTABLE
+deb [arch=amd64,i386] https://deb.debian.org/debian unstable main contrib non-free
+deb-src [arch=amd64,i386] https://deb.debian.org/debian unstable main contrib non-free
+### EXPERIMENTAL
+deb [arch=amd64,i386] https://deb.debian.org/debian experimental main contrib non-free
+deb-src [arch=amd64,i386] https://deb.debian.org/debian experimental main contrib non-free
+
+# Devuan
+## STABLE
+deb [arch=amd64,i386] https://deb.devuan.org/devuan stable main contrib non-free
+deb-src [arch=amd64,i386] https://deb.devuan.org/devuan stable main contrib non-free
+## TESTING
+deb [arch=amd64,i386] https://deb.devuan.org/devuan testing main contrib non-free
+deb-src [arch=amd64,i386] https://deb.devuan.org/devuan testing main contrib non-free
+### UNSTABLE
+deb [arch=amd64,i386] https://deb.devuan.org/devuan unstable main contrib non-free
+deb [arch=amd64,i386] https://deb.devuan.org/devuan unstable main contrib non-free
+### EXPERIMENTAL
+deb [arch=amd64,i386] https://deb.devuan.org/devuan experimental main contrib non-free
+deb [arch=amd64,i386] https://deb.devuan.org/devuan experimental main contrib non-free

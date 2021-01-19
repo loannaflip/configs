@@ -1,0 +1,115 @@
+# User Sets #
+sys-devel/gcc pgo graphite lto -ada -d -objc
+dev-vcs/git curl blksha1
+net-libs/nodejs npm
+sys-devel/llvm gold
+www-client/chromium tcmalloc -hangouts -official -wayland
+media-video/ffmpeg openssl fdk
+media-libs/mesa vulkan
+x11-misc/picom config-file opengl
+app-crypt/pinentry gnome-keyring
+sys-libs/glibc -multilib
+app-emulation/qemu usbredir spice
+app-emulation/libvirt virt-network virtualbox libvirtd fuse
+sys-apps/usermode-utilities fuse
+net-dns/dnsmasq script
+media-libs/mlt jack frei0r melt kdenlive
+app-editors/emacs xft athena
+sys-apps/kmod lzma zlib
+
+# Firefox #
+www-client/firefox pgo lto clang custom-optimization gmp-autoupdate hwaccel pulseaudio -screenshot -startup-notification system-av1 system-icu system-jpeg system-libevent system-libvpx system-sqlite system-webp -bindist -eme-free -geckodriver -jack -wayland
+dev-lang/rust clippy miri doc -libressl rls rustfmt nightly parallel-compiler -system-bootstrap wasm
+
+# Firmware #
+sys-kernel/linux-firmware savedconfig
+
+# Layman #
+app-portage/layman sync-plugin-portage git
+
+# Xorg #
+x11-base/xorg-drivers libinput
+x11-base/xorg-server elogind xvfb
+
+# Openrc #
+sys-apps/openrc -netifrc
+
+# Network #
+net-misc/networkmanager -wex
+
+# Misc #
+media-plugins/alsa-plugins pulseaudio
+
+# Auto Sets #
+sys-libs/zlib minizip
+dev-libs/libpcre2 pcre32
+dev-qt/qtwebengine widgets
+media-libs/opencv contribdnn contrib
+media-libs/vigra openexr
+dev-libs/boost python
+dev-qt/qtmultimedia widgets
+dev-qt/qtwebchannel qml
+net-libs/nodejs inspector
+dev-qt/qtgui accessibility
+media-video/ffmpeg wavpack
+media-libs/libvpx postproc
+dev-util/ostree curl
+dev-qt/qtdeclarative localstorage
+net-libs/zeromq drafts
+dev-python/QtPy printsupport
+www-client/w3m imlib
+app-text/ghostscript-gpl cups
+net-print/cups-filters -pdf
+dev-python/PyQt5 printsupport webchannel
+dev-libs/boost context
+dev-libs/boehm-gc cxx
+
+# Required by webkit-gtk #
+dev-ruby/rubygems ruby_targets_ruby27
+virtual/rubygems ruby_targets_ruby27
+dev-ruby/rdoc ruby_targets_ruby27
+dev-ruby/json ruby_targets_ruby27
+dev-ruby/did_you_mean ruby_targets_ruby27
+dev-ruby/bundler ruby_targets_ruby27
+dev-ruby/xmlrpc ruby_targets_ruby27
+dev-ruby/test-unit ruby_targets_ruby27
+dev-ruby/rake ruby_targets_ruby27
+dev-ruby/power_assert ruby_targets_ruby27
+dev-ruby/net-telnetruby_targets_ruby27
+dev-ruby/minitest ruby_targets_ruby27
+dev-ruby/kpeg ruby_targets_ruby27
+dev-ruby/racc ruby_targets_ruby27
+dev-ruby/net-telnet ruby_targets_ruby27
+virtual/ruby-ssl ruby_targets_ruby27
+
+# Required by phpmyadmin #
+dev-db/phpmyadmin setup
+dev-lang/php mysqli fpm
+app-eselect/eselect-php fpm
+
+# Required #
+www-servers/tornado -python_targets_python2_7
+dev-libs/libjcat gpg pkcs7
+
+# Specific #
+dev-qt/qtwidgets gtk
+net-misc/spice-gtk usbredir
+sys-libs/zlib static-libs
+dev-libs/libdbusmenu gtk3
+x11-libs/wxGTK webkit
+
+# Chess #
+games-board/stockfish optimize
+
+# Vim #
+app-editors/vim X terminal
+
+# Wine #
+virtual/wine staging
+media-libs/libsdl2 haptic
+
+# Nerd Fonts #
+media-fonts/nerd-fonts noto
+
+# REDIS #
+dev-db/redis tcmalloc -jemalloc

@@ -1,0 +1,59 @@
+# Flags
+COMMON_FLAGS="-O2 -pipe -march=skylake"
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
+FCFLAGS="${COMMON_FLAGS}"
+FFLAGS="${COMMON_FLAGS}"
+LDFLAGS="-Wl,-O1 -Wl,--as-needed"
+CPU_FLAGS_X86="aes avx avx2 f16c fma3 mmx mmxext pclmul popcnt sse sse2 sse3 sse4_1 sse4_2 ssse3"
+CHOST="x86_64-pc-linux-gnu"
+CBUILD="x86_64-pc-linux-gnu"
+VIDEO_CARDS="intel i965"
+
+# Use Flags
+USE="-* amd64 threads -bluetooth layers -extras rar X gtk gnome dri sna"
+
+# Qemu
+QEMU_SOFTMMU_TARGETS="arm x86_64 sparc"
+QEMU_USER_TARGETS="x86_64"
+
+# Package specific
+ACCEPT_LICENSE="-* @FREE"
+# Unstable
+ACCEPT_KEYWORDS="amd64 ~amd64"
+ABI_X86="64"
+KERNEL="linux"
+USERLAND="GNU"
+INPUT_DEVICES="keyboard mouse"
+
+# Target specific
+RUBY_TARGETS="ruby24"
+PYTHON_TARGETS="python3_6 python3_7 python3_8"
+PYTHON_SINGLE_TARGET="python3_7"
+POSTGRES_TARGETS="postgres9_5 postgres10"
+PHP_TARGETS="php5-6 php7-1"
+ADA_TARGET="gnat_2018"
+LUA_TARGETS="lua51"
+FONT_TYPES="otf"
+
+# Miscellaneous
+EMERGE_DEFAULT_OPTS="--autounmask-write --verbose-conflicts"
+FEATURES="-* userpriv xattr candy -news"
+MAKEOPTS="-j14"
+PORTAGE_NICENESS="-19"
+PORTAGE_RSYNC_OPTS="--recursive --links --safe-links --perms --times --omit-dir-times --compress --force --whole-file --delete --stats --human-readable --timeout=180 --exclude=/distfiles --exclude=/local --exclude=/packages --exclude=/.git"
+AUTOCLEAN="yes"
+
+# Portage Hierarchy
+PORTDIR="/var/db/repos/gentoo"
+DISTDIR="/var/cache/distfiles"
+PKGDIR="/var/cache/binpkgs"
+
+# Language
+L10N="en en-CA en-GB en-US"
+LANG="en_US.UTF8"
+LC_ALL="en_US.UTF-8"
+LC_MESSAGES=C
+
+# Mirrors
+GENTOO_MIRRORS="http://gentoo.aditsu.net:8000/"

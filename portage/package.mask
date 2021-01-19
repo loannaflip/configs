@@ -1,0 +1,6 @@
+media-libs/dav1d
+www-client/firefox
+dev-libs/icu
+media-gfx/gimp
+app-emulation/virtualbox
+dev-lang/perl

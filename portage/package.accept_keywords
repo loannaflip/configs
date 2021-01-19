@@ -1,0 +1,14 @@
+sys-kernel/linux-firmware **
+sys-apps/portage **
+sys-apps/openrc **
+x11-terms/alacritty **
+x11-misc/picom **
+media-libs/freetype **
+media-sound/cava **
+media-sound/pulseeffects **
+x11-apps/ocs-url **
+sys-apps/paludis **
+media-gfx/fontmatrix **
+net-misc/youtube-dl **
+app-crypt/keybase **
+dev-util/rustup **

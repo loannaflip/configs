@@ -1,0 +1,31 @@
+# shellcheck shell=sh # Paludis doesn't accept shebang here
+# shellcheck disable=SC2034 # Appears unused is invalid since this is recognized by paludis
+
+CHOST="x86_64-pc-linux-gnu"
+CBUILD="x86_64-pc-linux-gnu"
+
+FLAGS="$(echo {-f{devirtualize-at-ltrans,ipa-pta,lto=1,omit-frame-pointer}, \
+-fno-{plt,semantic-interposition,stack-protector},-m{arch,tune}=skylake} -Ofast -pipe -falign-functions=32)"
+
+# Config Protection
+CONFIG_PROTECT_MASK="/boot/grub/grub.cfg /etc/environment /etc/resolv.conf /etc/hosts /etc/hostname /etc/fstab"
+
+# Reduce SPAM from cmake based builds
+CMAKE_VERBOSE=OFF
+
+# Lang
+LC_ALL="en_US.UTF-8"
+
+export {i686,x86_64}_pc_linux_gnu="$FLAGS"
+export {i686,x86_64}_pc_linux_gnu_CFLAGS="$FLAGS"
+export {i686,x86_64}_pc_linux_gnu_CXXFLAGS="$FLAGS"
+export {i686,x86_64}_pc_linux_gnu_FFLAGS="$FLAGS"
+export {i686,x86_64}_pc_linux_gnu_FCFLAGS="$FLAGS"
+export {i686,x86_64}_pc_linux_gnu_FDFLAGS="-Wl,-O3 -Wl, -pthread -lpthread"
+export {i686,x86_64}_pc_linux_gnu_LDFLAGS="-Wl,-O3 -Wl,--as-needed -Wl,--sort-common -Wl,--hash-style=gnu"
+
+# Python breaks with -ffast-math.
+if [[ "${CATEGORY}/${PN}" == "dev-lang/python" ]] ; then
+  export {i686,x86_64}_pc_linux_gnu="$FLAGS -O3"
+fi
+
