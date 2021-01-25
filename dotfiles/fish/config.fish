@@ -1,11 +1,12 @@
 set fish_greetings
 set PATH ~/.cargo/bin $PATH
 set PATH ~/.local/bin $PATH
+set PATH ~/.linuxbrew/bin $PATH
 
 starship init fish | source
 zoxide init fish | source
 
-sh -C ~/.config/fish/startup &>/dev/null
+#sh -C ~/.config/fish/startup &>/dev/null
 
 # LAZER #
 alias osu-lazer="sh ~/osu"
