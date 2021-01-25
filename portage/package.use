@@ -90,6 +90,12 @@ app-eselect/eselect-php fpm
 # Required #
 www-servers/tornado -python_targets_python2_7
 dev-libs/libjcat gpg pkcs7
+dev-python/docutils -python_targets_python2_7
+dev-python/pycparser -python_targets_python2_7
+dev-python/ply -python_targets_python2_7
+dev-python/six -python_targets_python2_7
+dev-python/PySocks -python_targets_python2_7
+dev-python/* -python_targets_python2_7
 
 # Specific #
 dev-qt/qtwidgets gtk
@@ -97,6 +103,9 @@ net-misc/spice-gtk usbredir
 sys-libs/zlib static-libs
 dev-libs/libdbusmenu gtk3
 x11-libs/wxGTK webkit
+net-libs/libtorrent-rasterbar python
+net-libs/gnutls guile
+net-libs/libssh server
 
 # Chess #
 games-board/stockfish optimize
@@ -113,3 +122,6 @@ media-fonts/nerd-fonts noto
 
 # REDIS #
 dev-db/redis tcmalloc -jemalloc
+
+# MPV #
+media-video/mpv libmpv
