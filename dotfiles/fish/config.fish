@@ -2,6 +2,7 @@ set fish_greetings
 set PATH ~/.cargo/bin $PATH
 set PATH ~/.local/bin $PATH
 set PATH ~/.linuxbrew/bin $PATH
+set PATH ~/go/bin $PATH
 
 starship init fish | source
 zoxide init fish | source
@@ -57,6 +58,9 @@ alias cp="cp -v"
 alias clone="git clone"
 alias cat="dog"
 alias search="fd"
+
+# Work
+alias git-pull-all="find . -maxdepth 3 -name .git -type d | rev | cut -c 6- | rev | xargs -I {} git -C {} pull"
 
 # tabtab source for electron-forge package
 # uninstall by removing these lines or running `tabtab uninstall electron-forge`
