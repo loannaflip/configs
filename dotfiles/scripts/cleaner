@@ -9,6 +9,7 @@ sudo rm -rf ~/.local/share/Trash/*
 sudo rm -rf ~/.cargo/git
 sudo rm -rf ~/.cargo/registry
 sudo ccache -c
+sudo strat -r exherbo cave purge -x
 sudo emerge --ask --depclean
 sudo pacman -Scc
 sudo pacman -Rns $(pacman -Qtdq)
