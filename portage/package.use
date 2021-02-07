@@ -88,14 +88,9 @@ dev-lang/php mysqli fpm
 app-eselect/eselect-php fpm
 
 # Required #
-www-servers/tornado -python_targets_python2_7
 dev-libs/libjcat gpg pkcs7
-dev-python/docutils -python_targets_python2_7
-dev-python/pycparser -python_targets_python2_7
-dev-python/ply -python_targets_python2_7
-dev-python/six -python_targets_python2_7
-dev-python/PySocks -python_targets_python2_7
-dev-python/* -python_targets_python2_7
+app-text/texlive-core xetex
+media-libs/gd fontconfig
 
 # Specific #
 dev-qt/qtwidgets gtk
@@ -106,6 +101,7 @@ x11-libs/wxGTK webkit
 net-libs/libtorrent-rasterbar python
 net-libs/gnutls guile
 net-libs/libssh server
+sys-boot/grub mount
 
 # Chess #
 games-board/stockfish optimize
