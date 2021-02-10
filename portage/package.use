@@ -64,24 +64,6 @@ dev-python/PyQt5 printsupport webchannel
 dev-libs/boost context
 dev-libs/boehm-gc cxx
 
-# Required by webkit-gtk #
-dev-ruby/rubygems ruby_targets_ruby27
-virtual/rubygems ruby_targets_ruby27
-dev-ruby/rdoc ruby_targets_ruby27
-dev-ruby/json ruby_targets_ruby27
-dev-ruby/did_you_mean ruby_targets_ruby27
-dev-ruby/bundler ruby_targets_ruby27
-dev-ruby/xmlrpc ruby_targets_ruby27
-dev-ruby/test-unit ruby_targets_ruby27
-dev-ruby/rake ruby_targets_ruby27
-dev-ruby/power_assert ruby_targets_ruby27
-dev-ruby/net-telnetruby_targets_ruby27
-dev-ruby/minitest ruby_targets_ruby27
-dev-ruby/kpeg ruby_targets_ruby27
-dev-ruby/racc ruby_targets_ruby27
-dev-ruby/net-telnet ruby_targets_ruby27
-virtual/ruby-ssl ruby_targets_ruby27
-
 # Required by phpmyadmin #
 dev-db/phpmyadmin setup
 dev-lang/php mysqli fpm
@@ -91,6 +73,9 @@ app-eselect/eselect-php fpm
 dev-libs/libjcat gpg pkcs7
 app-text/texlive-core xetex
 media-libs/gd fontconfig
+dev-lang/scala binary
+media-libs/libmediaart gtk -qt5
+media-plugins/grilo-plugins tracker
 
 # Specific #
 dev-qt/qtwidgets gtk
@@ -102,6 +87,7 @@ net-libs/libtorrent-rasterbar python
 net-libs/gnutls guile
 net-libs/libssh server
 sys-boot/grub mount
+x11-libs/gtk+ X
 
 # Chess #
 games-board/stockfish optimize
@@ -121,3 +107,28 @@ dev-db/redis tcmalloc -jemalloc
 
 # MPV #
 media-video/mpv libmpv
+
+# DDE #
+dde-base/dde-meta elogind extra manual multimedia policykit -systemd terminal turbo screensaver
+
+# Ruby #
+dev-ruby/minitest ruby_targets_ruby27 ruby_targets_ruby30
+dev-ruby/power_assert ruby_targets_ruby27 ruby_targets_ruby30
+dev-ruby/rake ruby_targets_ruby27 ruby_targets_ruby30
+dev-ruby/rbs ruby_targets_ruby27 ruby_targets_ruby30
+dev-ruby/rexml ruby_targets_ruby27 ruby_targets_ruby30
+dev-ruby/rss ruby_targets_ruby27 ruby_targets_ruby30
+dev-ruby/test-unit ruby_targets_ruby27 ruby_targets_ruby30
+dev-ruby/typeprof ruby_targets_ruby27 ruby_targets_ruby30
+dev-ruby/bundler ruby_targets_ruby27 ruby_targets_ruby30
+dev-ruby/did_you_mean ruby_targets_ruby27 ruby_targets_ruby30
+dev-ruby/json ruby_targets_ruby27 ruby_targets_ruby30
+dev-ruby/rdoc ruby_targets_ruby27 ruby_targets_ruby30
+virtual/rubygems ruby_targets_ruby27 ruby_targets_ruby30
+dev-ruby/kpeg ruby_targets_ruby27 ruby_targets_ruby30
+dev-ruby/racc ruby_targets_ruby27 ruby_targets_ruby30
+dev-ruby/rubygems ruby_targets_ruby27 ruby_targets_ruby30
+virtual/ruby-ssl ruby_targets_ruby27 ruby_targets_ruby30
+
+# Gnome #
+gnome-base/gnome extras
