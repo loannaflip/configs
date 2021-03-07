@@ -38,15 +38,15 @@ colors:
     cyan:    '#86c8f7'
     white:   '#ffc4f0'
 
-background_opacity: 0.4
+background_opacity: 1.0
 
 window:
   padding:
-    x: 5
-    y: 3
+    x: 1
+    y: 1
   title: Alacritty
   dynamic_padding: true
-  decorations: full
+  decorations: None
 
 glyph_offset:
   x: 0

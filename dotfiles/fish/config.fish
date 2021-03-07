@@ -1,26 +1,9 @@
 set fish_greetings
 set PATH ~/.cargo/bin $PATH
 set PATH ~/.local/bin $PATH
-set PATH ~/.linuxbrew/bin $PATH
-set PATH ~/go/bin $PATH
+set PATH /home/linuxbrew/.linuxbrew/bin $PATH
 
 starship init fish | source
-zoxide init fish | source
-
-#sh -C ~/.config/fish/startup &>/dev/null
-
-# LAZER #
-alias osu-lazer="sh ~/osu"
-
-# barva #
-#sh ~/barva/barva.sh &
-
-#if status is-interactive
-#and not set -q TMUX
-#    exec tmux
-#end
-
-#unifetch
 
 # Gentoo
 alias reposync="sudo emerge --sync ; sudo layman -S"
@@ -61,7 +44,3 @@ alias search="fd"
 
 # Work
 alias git-pull-all="find . -maxdepth 3 -name .git -type d | rev | cut -c 6- | rev | xargs -I {} git -C {} pull"
-
-# tabtab source for electron-forge package
-# uninstall by removing these lines or running `tabtab uninstall electron-forge`
-[ -f /home/uniminin/xi-electron/node_modules/tabtab/.completions/electron-forge.fish ]; and . /home/uniminin/xi-electron/node_modules/tabtab/.completions/electron-forge.fish
