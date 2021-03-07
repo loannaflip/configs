@@ -21,6 +21,7 @@ Con Kolivas (MuQSS scheduler and patchset) Linux Kernel Configuration for Source
 [    0.115624] MuQSS CPU 0 llc 0 RQ order 3 RQ 3 llc 0
 -- snip --
 [    0.115637] MuQSS runqueue share type NONE total runqueues: 4
-[    3.108161] BTRFS: device fsid ac25abd7-9059-4a2a-9fc5-fc0cbf761a55 devid 1 transid 354990 /dev/root scanned by MuQSS/0 (1)
-[    3.239358] MuQSS CPU scheduler v0.205 by Con Kolivas.
+[    0.768888] BTRFS: device fsid 9529ff9c-9365-4d02-81c2-754c48d899c1 devid 1 transid 84143 /dev/root scanned by MuQSS/0 (1)
+[    0.863598] MuQSS CPU scheduler v0.208 by Con Kolivas.[    0.768888] BTRFS: device fsid 9529ff9c-9365-4d02-81c2-754c48d899c1 devid 1 transid 84143 /dev/root scanned by MuQSS/0 (1)
+[    0.863598] MuQSS CPU scheduler v0.208 by Con Kolivas.
 ```
