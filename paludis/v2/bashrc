@@ -1,0 +1,13 @@
+CHOST="x86_64-pc-linux-gnu"
+CBUILD="x86_64-pc-linux-gnu"
+
+# Lang
+LC_ALL="en_US.UTF-8"
+
+x86_64_pc_linux_gnu="-march=skylake -mtune=skylake -O2 -pipe"
+x86_64_pc_linux_gnu_CFLAGS="-march=skylake -mtune=skylake -O2 -pipe"
+x86_64_pc_linux_gnu_CXXFLAGS="-march=skylake -mtune=skylake -O2 -pipe"
+x86_64_pc_linux_gnu_FFLAGS="-march=skylake -mtune=skylake -O2 -pipe"
+x86_64_pc_linux_gnu_FCFLAGS="-march=skylake -mtune=skylake -O2 -pipe"
+x86_64_pc_linux_gnu_FDFLAGS="-Wl,-O2 -Wl,--as-needed"
+x86_64_pc_linux_gnu_LDFLAGS="-Wl,-O2 -Wl,--as-needed"
