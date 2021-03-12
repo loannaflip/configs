@@ -67,6 +67,8 @@ media-libs/coin doc
 dev-python/QtPy printsupport
 dev-python/PyQt5 declarative sql webchannel
 media-libs/quarter doc
+app-accessibility/brltty python
+dev-libs/liblouis python
 sci-libs/vtk tcl
 media-libs/harfbuzz icu
 media-libs/libpng apng
