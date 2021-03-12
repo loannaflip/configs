@@ -2,7 +2,7 @@
 Con Kolivas (MuQSS scheduler and patchset) Linux Kernel Configuration for Source/LFS based system
 
 ## Summary
-* Linux/x86 5.11.0-ck Kernel Configuration
+* Linux/x86 5.11.6-ck Kernel Configuration
 * Patchsets: CK (+MuQSS scheduler), Others (GCC, ARCH) | [ck-sources/files](https://github.com/Uniminin/uniminin-overlay/tree/master/sys-kernel/ck-sources/files)
 
 ```
