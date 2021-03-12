@@ -1,0 +1,15 @@
+# System #
+UUID=9529ff9c-9365-4d02-81c2-754c48d899c1 /     btrfs noatime          0 0
+UUID=5542-8B39                            /boot vfat  defaults,noatime 0 0
+
+# Mounts #
+UUID=7e517470-488a-462e-98cf-9b94b2c75816 /mnt/disk btrfs noatime 0 0
+
+# SWAP #
+UUID=fb600e18-ecf1-4a0e-88d6-5a3f3d95b462 none swap defaults 0 0
+
+# TMPFS #
+tmpfs /tmp tmpfs nodev,size=15G,nosuid,noatime,nodev 0 0
+shm /dev/shm tmpfs nodev,size=15G,nosuid,noexec 0 0
+tmpfs /var/tmp tmpfs rw,nosuid,noatime,nodev,size=15G,mode=1777 0 0
+tmpfs /var/tmp/portage tmpfs rw,nosuid,noatime,nodev,size=15G,mode=775,uid=portage,gid=portage,x-mount.mkdir=775 0 0
