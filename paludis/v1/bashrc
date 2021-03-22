@@ -5,7 +5,7 @@ CHOST="x86_64-pc-linux-gnu"
 CBUILD="x86_64-pc-linux-gnu"
 
 FLAGS="$(echo {-f{devirtualize-at-ltrans,ipa-pta,lto=1,omit-frame-pointer}, \
--fno-{plt,semantic-interposition,stack-protector},-m{arch,tune}=skylake} -Ofast -pipe -falign-functions=32)"
+-fno-{plt,semantic-interposition,stack-protector},-m{arch,tune,cpu}=skylake} -Ofast -pipe -falign-functions=32)"
 
 # Config Protection
 CONFIG_PROTECT_MASK="/boot/grub/grub.cfg /etc/environment /etc/resolv.conf /etc/hosts /etc/hostname /etc/fstab"
