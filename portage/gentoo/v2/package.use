@@ -58,6 +58,7 @@ virtual/ruby-ssl ruby_targets_ruby27 ruby_targets_ruby30
 dev-ruby/net-telnet ruby_targets_ruby27 ruby_targets_ruby30
 dev-ruby/xmlrpc ruby_targets_ruby27 ruby_targets_ruby30
 media-libs/sdl-mixer modplug
+media-libs/mlt melt
 sci-libs/hdf5 unsupported
 app-text/ghostscript-gpl cups
 sci-libs/med python

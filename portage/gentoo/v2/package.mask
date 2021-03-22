@@ -1,4 +1,10 @@
-dev-util/radare2
+#dev-util/radare2
+dev-java/openjdk
+sys-fs/btrfs-progs
+www-client/firefox
+net-im/telegram-desktop
+sys-libs/db
+
 sys-kernel/vanilla-sources
 sys-kernel/gentoo-sources
 sys-kernel/git-sources
