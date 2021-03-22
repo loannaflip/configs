@@ -27,7 +27,7 @@ colors:
     cyan:    '#86c8f7'
     white:   '#ffc4f0'
 
-  # Dim colors (Optional)
+  # Dim colors
   dim:
     black:   '#ff78a5'
     red:     '#ff5454'
@@ -42,8 +42,8 @@ background_opacity: 1.0
 
 window:
   padding:
-    x: 1
-    y: 1
+    x: 5
+    y: 5
   title: Alacritty
   dynamic_padding: true
   decorations: None

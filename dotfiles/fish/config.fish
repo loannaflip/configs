@@ -42,5 +42,6 @@ alias clone="git clone"
 alias cat="dog"
 alias search="fd"
 
-# Work
+# Git
+alias gitt="git add . ; git commit -m"
 alias git-pull-all="find . -maxdepth 3 -name .git -type d | rev | cut -c 6- | rev | xargs -I {} git -C {} pull"

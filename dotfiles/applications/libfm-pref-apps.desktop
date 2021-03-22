@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Preferred Applications
-Comment=Select applications called on click on Web link or e-mail address
-Icon=preferences-desktop
-Exec=libfm-pref-apps
-StartupNotify=true
-Categories=Settings;DesktopSettings;X-LXDE-Settings;GTK;
-OnlyShowIn=LXDE;
