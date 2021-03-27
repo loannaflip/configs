@@ -1,0 +1,12 @@
+CHOST="x86_64-pc-linux-gnu"
+CBUILD="x86_64-pc-linux-gnu"
+
+c1="-march=skylake -mtune=skylake -O2 -pipe"
+c2="-Wl,-O2 -Wl,--as-needed -Wl,--hash-style=gnu"
+
+x86_64_pc_linux_gnu_CFLAGS="${c1}"
+x86_64_pc_linux_gnu_CXXFLAGS="${c1}"
+x86_64_pc_linux_gnu_FFLAGS="${c1}"
+x86_64_pc_linux_gnu_FCFLAGS="${c1}"
+x86_64_pc_linux_gnu_FDFLAGS="${c2}"
+x86_64_pc_linux_gnu_LDFLAGS="${c2}"
